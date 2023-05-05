@@ -7,7 +7,7 @@ int main() {
     scanf("%d %d", &n, &k);
     for (i = 0; i < n; ++i) {
         scanf("%d ", &score);
-        if (i == k) min_score = score;
+        if (i == k - 1) min_score = score;
         if (score > 0 && score >= min_score) ++ans;
         else break;
     }
