@@ -9,7 +9,7 @@ int main() {
     scanf("%d", &n);
     for (int i = 0; i < n; ++i) {
         scanf("%3s", buff);
-        printf("%s\n", buff);
+        if (n == 2) printf("%s\n", buff);
         if (buff[1] == '+') ++x;
         else --x;
     }
