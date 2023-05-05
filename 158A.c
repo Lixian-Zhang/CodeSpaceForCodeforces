@@ -1,15 +1,17 @@
 #include <stdio.h>
 
 int main() {
-    int n, k, ans;
+    int i, n, k, score, min_score, ans;
     ans = 0;
-    
+    min_score = 0;
     scanf("%d %d", &n, &k);
-    for (int i = 0; i < k; ++i) {
-        scanf("%d ", &n);
-        if (n > 0) ++ans;
+    for (i = 0; i < n; ++i) {
+        scanf("%d ", &score);
+        if (i == k) min_score = score;
+        if (score > 0 && score >= min_score) ++ans;
         else break;
     }
+
     printf("%d", ans);
 
     return 0;
