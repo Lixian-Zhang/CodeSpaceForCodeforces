@@ -7,7 +7,7 @@ int main() {
 
     scanf("%d", &n);
     for (int i = 0; i < n; ++i) {
-        scanf("%3s", buff);
+        sscanf("%3s", buff);
         if (buff[1] == '+') ++x;
         else --x;
     }
